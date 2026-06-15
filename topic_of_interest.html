@@ -4,11 +4,14 @@
     <meta charset="utf-8" />
     <title>My Handmade Crafts</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css" />
+    <meta name="viewport" content="initial-scale=1" />
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
-
     <div class="container">
 
       <header>
@@ -23,63 +26,67 @@
       </nav>
 
       <main>
-        <section id="section_sword">
-          <h2>Minecraft Diamond Sword</h2>
-          <p>
+        <div class="column1">
+          <section id="section_sword">
+            <h2>Minecraft Diamond Sword</h2>
+            <p>
               I built this Minecraft diamond sword using resin and building blocks.
-            The blade pieces were filled with glow-in-the-dark resin, so it
-            actually lights up in the dark.
-          </p>
-          <img id="sword_img2" src="images/sword2.jpg" alt="Minecraft diamond sword" width="300" />
-          <img id="sword_img3" src="images/sword3.jpg" alt="Minecraft diamond sword glow" width="300" />
-          <p id="sword_caption">Hover over the images to see how it was made</p>
-        </section>
+              The blade pieces were filled with glow-in-the-dark resin, so it
+              actually lights up in the dark.
+            </p>
+            <img id="sword_img2" src="images/sword2.jpg" alt="Minecraft diamond sword" style="width:100%; margin-bottom:8px;" />
+            <img id="sword_img3" src="images/sword3.jpg" alt="Minecraft diamond sword glow" style="width:100%;" />
+            <p id="sword_caption">Hover over the images to see how it was made</p>
+          </section>
+        </div>
 
-        <section id="section_clay">
-          <h2>Anime Clay Figures</h2>
-          <p>
-             These anime figures are sculpted entirely by hand using super
-            lightweight clay. 
-            I paint every detail: eyes, hair, and tiny
-            accessories with fine brushes.
-          </p>
-          <img id="clay_img1" src="images/clay1.jpg" alt="Eren and Mikasa clay figures" width="300" />
-          <img id="clay_img2" src="images/clay2.jpg" alt="Amu Hinamori clay figure" width="300" />
-          <p id="clay_caption">Hover over the figures to learn who they are</p>
-        </section>
+        <div class="column2">
+          <section id="section_clay">
+            <h2>Anime Clay Figures</h2>
+            <p>
+              These anime figures are sculpted entirely by hand using super
+              lightweight clay. I paint every detail: eyes, hair, and tiny
+              accessories with fine brushes.
+            </p>
+            <img id="clay_img1" src="images/clay1.jpg" alt="Eren and Mikasa clay figures" style="width:100%; margin-bottom:8px;" />
+            <img id="clay_img2" src="images/clay2.jpg" alt="Amu Hinamori clay figure" style="width:100%;" />
+            <p id="clay_caption">Hover over the figures to learn who they are</p>
+          </section>
+        </div>
 
-        <section id="section_food">
-          <h2>Miniature Food Sculptures</h2>
-          <p>
-             These tiny food scenes are made using resin, plaster, and polymer clay.
-            Click on each image to learn more about it
-          </p>
-          <div class="food_item">
-            <img class="food_img" src="images/food1.jpg" alt="Miniature bread bowl soup" width="300" />
-            <p class="food_desc" id="food_desc1" style="display:none;">
-              A potato soup served in a bread bowl, with carrots, sausage, and potatoes on the side.
+        <div class="column3">
+          <section id="section_food">
+            <h2>Miniature Food Sculptures</h2>
+            <p>
+              These tiny food scenes are made using resin, plaster, and polymer clay.
+              Click on each image to learn more about it.
             </p>
-          </div>
-          <div class="food_item">
-            <img class="food_img" src="images/food2.jpg" alt="Miniature apple pie" width="300" />
-            <p class="food_desc" id="food_desc2" style="display:none;">
-              An apple pie with filling, cinnamon, and apples. This is the making process~
-            </p>
-          </div>
-          <div class="food_item">
-            <img class="food_img" src="images/food3.jpg" alt="Miniature vintage desserts" width="300" />
-            <p class="food_desc" id="food_desc3" style="display:none;">
-              A vintage dessert spread with brownies, pudding, cherries, pumpkin pie, and cheesecake.
-            </p>
-          </div>
-          <div class="food_item">
-            <img class="food_img" src="images/food4.jpg" alt="Miniature pink desserts" width="300" />
-            <p class="food_desc" id="food_desc4" style="display:none;">
-              A pink dessert table with a pink cake, cream, and a chocolate cupcake.
-            </p>
-          </div>
-        </section>
-
+            <div class="food_item">
+              <img class="food_img" src="images/food1.jpg" alt="Miniature bread bowl soup" style="width:100%; margin-bottom:4px;" />
+              <p class="food_desc" id="food_desc1" style="display:none;">
+                A potato soup served in a bread bowl, with carrots, sausage, and potatoes on the side.
+              </p>
+            </div>
+            <div class="food_item">
+              <img class="food_img" src="images/food2.jpg" alt="Miniature apple pie" style="width:100%; margin-bottom:4px;" />
+              <p class="food_desc" id="food_desc2" style="display:none;">
+                An apple pie with filling, cinnamon, and apples. This is the making process~
+              </p>
+            </div>
+            <div class="food_item">
+              <img class="food_img" src="images/food3.jpg" alt="Miniature vintage desserts" style="width:100%; margin-bottom:4px;" />
+              <p class="food_desc" id="food_desc3" style="display:none;">
+                A vintage dessert spread with brownies, pudding, cherries, pumpkin pie, and cheesecake.
+              </p>
+            </div>
+            <div class="food_item">
+              <img class="food_img" src="images/food4.jpg" alt="Miniature pink desserts" style="width:100%; margin-bottom:4px;" />
+              <p class="food_desc" id="food_desc4" style="display:none;">
+                A pink dessert table with a pink cake, cream, and a chocolate cupcake.
+              </p>
+            </div>
+          </section>
+        </div>
       </main>
 
       <footer>
@@ -87,6 +94,5 @@
       </footer>
 
     </div>
-
   </body>
 </html>

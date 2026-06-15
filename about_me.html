@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <title>About Me - Rei Li</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css" />
+    <meta name="viewport" content="initial-scale=1" />
   </head>
   <body>
-
     <div class="container">
 
       <header>
@@ -17,47 +20,51 @@
         <a href="index.html">Home</a>
         <a href="about_me.html">About Me</a>
         <a href="more_about_me.html">More About Me</a>
+        <a href="topic_of_interest.html">My Crafts</a>
       </nav>
 
       <main>
-
-        <section id="my_background">
-          <h2>My background</h2>
-          <p>
+        <div class="column1">
+          <section id="my_background">
+            <h2>My background</h2>
+            <p>
               Hi, I'm Rei Li, a rising senior studying Electrical Engineering at
-            <a href="https://engineering.nyu.edu">NYU Tandon School of Engineering</a>.
-            I grew up in China and came to New York for college.
-          </p>
-          <p>
+              <a href="https://engineering.nyu.edu">NYU Tandon School of Engineering</a>.
+              I grew up in China and came to New York for college.
+            </p>
+            <p>
               Back home, I have two younger sisters and the most adorable golden
-            retriever. My younger sister actually goes to NYU too, studying
-            Mathematics and we're really close, which makes being away from home
-            a little easier knowing we're at the same school.
-          </p>
-        </section>
+              retriever. My younger sister actually goes to NYU too, studying
+              Mathematics and we're really close, which makes being away from home
+              a little easier knowing we're at the same school.
+            </p>
+          </section>
+        </div>
 
-        <img src="images/mycutedog.jpg" alt="A photo of my cute dog" width="300">
-        <img src="images/mycraft.jpg" alt="my handmade crafts" width="300">
-
-        <section id="my_interests">
-          <h2>My interests</h2>
-          <p>
+        <div class="column2">
+          <section id="my_interests">
+            <h2>My interests</h2>
+            <p>
               Outside of engineering, I am completely obsessed with doll-making,
-            especially <a href="https://en.wikipedia.org/wiki/Ball-jointed_doll">BJD</a>
-            (ball-jointed dolls). There is something deeply satisfying about
-            sculpting something from nothing and watching it slowly come to life.
-          </p>
-          <p>
+              especially <a href="https://en.wikipedia.org/wiki/Ball-jointed_doll">BJD</a>
+              (ball-jointed dolls). There is something deeply satisfying about
+              sculpting something from nothing and watching it slowly come to life.
+            </p>
+            <p>
               More broadly, I love anything handmade. I work a lot with polymer clay and
-            I've made countless little figurines of my golden retriever, and each
-            one comes out slightly different, which I love. Crafting is my way to
-            fully relax and just making something for the joy of it.
-          </p>
-          <p>
-            Someday I'd love to have my own studio.
-          </p>
-        </section>
+              I've made countless little figurines of my golden retriever, and each
+              one comes out slightly different, which I love. Crafting is my way to
+              fully relax and just making something for the joy of it.
+            </p>
+            <p>Someday I'd love to have my own studio.</p>
+          </section>
+        </div>
 
+        <div class="column3">
+          <h2>Photos</h2>
+          <img src="images/mycutedog.jpg" alt="A photo of my cute dog" style="width:100%; margin-bottom:10px;" />
+          <img src="images/mycraft.jpg" alt="my handmade crafts" style="width:100%;" />
+        </div>
       </main>
 
       <footer>
@@ -65,6 +72,5 @@
       </footer>
 
     </div>
-
   </body>
 </html>
