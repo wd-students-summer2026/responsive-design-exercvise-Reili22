@@ -1,7 +1,9 @@
+/* desktop.css - 961px or greater */
 
 .container {
   width: 960px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header, footer, nav {
@@ -11,9 +13,9 @@ header, footer, nav {
 
 .column1, .column2, .column3 {
   float: left;
-  width: 33.33%;
+  width: 32%;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 0 5px;
 }
 
 main::after {
